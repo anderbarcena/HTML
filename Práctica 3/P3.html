@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica 3</title>
+    </head>
+    <body>
+        <form action="form.php" method="post">
+            <fieldset><legend>Datos del usuario</legend>
+Nombre:<input type="text"> <br> <br>
+Eres socio? <br><br>
+<input type="radio" name="socio" value="si" >Sí, soy socio 
+<input type="radio" name="socio" value="no" >No soy socio <br><br>
+Email: <input type="text"><br><br>
+Contraseña: <input type="password"><br><br>
+
+</fieldset>
+<fieldset><legend>Datos de la reserva</legend>
+    <br>
+    Edad:
+    <select name="groups" id="groups">
+       <optgroup label="Edad"> 
+            <option>Menor de 18</option>
+            <option>Mayor o igual 18</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <label for="date">Selecciona la fecha y hora de la reserva:</label>
+<input type="datetime-local" id="date">
+<br>
+<br>
+<textarea name="Comentarios" rows="10" cols="30">Comentarios</textarea>
+<br>
+<input type="checkbox">Acepto las condiciones
+<br><br>
+<input type="submit" value="Enviar">
+</fieldset>
+        </form>
+        
+    </body>
+</html>
